@@ -6,10 +6,8 @@ using MongoDB.Bson;
 
 namespace FluentMongo.Linq
 {
-    public class Person
+    public class Person : MongoEntity
     {
-        public ObjectId Id { get; set; }
-
         public Guid RefId { get; set; }
 
         [BsonElement("fn")]
